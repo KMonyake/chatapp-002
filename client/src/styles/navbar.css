@@ -1,0 +1,99 @@
+
+/* normal navbar */
+
+.navbar {
+    height: 5rem;
+    padding: 0 20px;
+    background-color: var(--color-1);
+    border-bottom: 1px solid green;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2{
+    color: green;
+    font-size: 2rem;
+}
+
+.navbar button {
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: green;
+}
+
+.navbar a{
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar #logo{
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    background-color: green;
+}
+
+.navbar a:nth-child(2){
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+/* Admin navbar */
+
+.navbar-red {
+    height: 5rem;
+    padding: 0 20px;
+    background-color: var(--color-1);
+    border-bottom: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-red h2 {
+    color: red;
+    font-size: 2rem;
+}
+
+.navbar-red button {
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar-red button:hover {
+    background-color: red;
+}
+
+.navbar-red a{
+    text-decoration: none;
+}

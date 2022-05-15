@@ -1,0 +1,15 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-1: #242526;
+  --color-2: #191919;
+}
+
+body{
+  font-family: "Lato",sans-serif;
+}

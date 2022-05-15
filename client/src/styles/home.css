@@ -1,0 +1,121 @@
+
+/* contact side */
+
+.home-container{
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background-color: var(--color-1);
+    overflow: hidden;
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr;
+}
+
+.home-container .users-container {
+    border-right: 2px solid var(--color-6);
+    overflow-y: auto;
+}
+
+.home-container .users-container h2{
+    color: white;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 2px solid white;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .home-container{
+        grid-template-columns: 1fr;
+    }
+
+    .home-container .users-container{
+        height: 4rem;
+        width: 100vw;
+        padding: 0 1rem;
+        border-bottom: 1px solid green;
+        overflow-x: auto;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .home-container .users-container h2{
+        display: block;
+    }
+}
+
+/* Messages side */
+
+.messages-container{
+    height: calc(100vh - 5rem);
+    background-color: var(--color-2);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-container .start{
+    height: 10%;
+    width: 100%;
+    padding: 0 1rem;
+    color: green;
+    border-bottom: 1px solid green;
+
+    display: flex;
+    align-items: center;
+}
+
+.messages-container .middle{
+    height: 80%;
+    width: 100%;
+    padding: 1rem 0;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages form */
+
+.messages-container .bottom {
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages-container .bottom input {
+    height: 2.5rem;
+    width: 40vw;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.messages-container .bottom button {
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .messages-container{
+        height: calc(100vh - 9rem);
+    }
+
+    .messages-container .bottom input {
+        width: 50vw;
+    }
+}

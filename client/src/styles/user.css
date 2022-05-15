@@ -1,0 +1,35 @@
+
+.contact{
+    height: 4rem;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.contact:hover{
+    background-color: green;
+}
+
+.contact h3{
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .contact{
+        height: 70%;
+        width: 10rem;
+        border: 2px solid white;
+        margin: 0 0.5rem;
+        border-radius: 5px;
+        
+        justify-content: center;
+    }
+    
+    .contact:hover{
+        background-color: transparent;
+        border: 2px solid green;
+    }
+}
